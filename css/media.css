@@ -1,0 +1,431 @@
+@media screen and (min-width:1200px){
+    .home{
+    background-color: var(--bg-color);
+    display: flex;
+}
+    .main-nav{
+    background-color: var(--nav-color);
+    position: fixed;
+    z-index: 9999999;
+    width: 100%;
+    box-shadow: 0px 0px 14px 0px #0000001b;
+}
+    .container{
+        width: 85%;
+        margin: auto;
+    }
+    .content-text{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 20px;
+}
+    .text-title h2{
+    color: var(--p-color);
+    width: 80%;
+    font-size: 65px;
+    font-family: 'Amatic SC', sans-serif;
+}
+
+    .home-photo{
+    width: 40%;
+}
+    .home-photo img{
+    width: 100%;
+    filter: drop-shadow(4px 4px 9px #000a);
+}
+    .chefs-items{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    width: 100%;
+    justify-content: center;
+}
+    .chefs-item{
+    width: 26%;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.1);
+    transition: all .5s;
+}
+.chefs-photo::after{
+    bottom: -25px;
+}
+    .gallery-item{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+    .card{
+    width: 27%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.card img{
+    width: 100%; 
+}
+iframe{
+        height: 40%;
+        width: 100%;
+        margin: auto;
+    }
+.contact-cards{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 15px 12px;
+}
+    .contact-card{
+    padding: 30px;
+    width: 49.5%;
+    display: flex;
+    background-color: var(--c-cardbg);
+    justify-content: flex-start;
+    align-items: center;
+}
+    .main-form{
+    padding: 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px 10px;
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.1);
+}
+    .sec1{
+    width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+} 
+@media screen and (min-width:992px) and (max-width:1199px) {
+    .home{
+        height: fit-content;
+    }
+    .container{
+        width: 100%;
+    }
+    .home-content{
+        padding: 100px 20px;
+    }
+    .chefs-item{
+        width: 30%;
+    }
+    .chefs-photo::after{
+        bottom: -40px;
+    }
+    .card{
+        width: 31%;
+    }
+    iframe{
+        width: 95%;
+        margin:0 25px;
+        height: 350px;
+    }
+    .contact-cards{
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 15px 12px;
+    }
+    .contact-card{
+        padding: 20px;
+        width: 47%;
+        display: flex;
+        background-color: #F5F5F5;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .contact-form{
+        display: flex;
+        justify-content: center;
+    }
+    .main-form{
+        width: 95%;
+    }
+    .first{
+        width: 49.4%;
+    }
+    .footer-content{
+        flex-wrap: wrap;
+        width: 95%;
+        justify-content: center;
+    }
+    .sec1{
+        order: -1;
+        width: 50%;
+    }
+    .sec2{
+        order: 1;
+        width: 100%;
+        padding:0;
+    }
+    .sec3{
+        order: 0;
+        width: 50%;
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px) {
+    .home{
+        height: fit-content;
+        
+    }
+    .home-content{
+        flex-direction: column;
+        justify-content: center; 
+        padding: 100px 0;   
+    }
+    .home-photo{
+        width: 80%;
+        order: -1;
+    }
+    .content-text{
+        width: 100%;
+        align-items: center;
+    }
+    
+    .text-title h2{
+        width: 50%;
+        margin: auto;
+    }
+    .book-button button{
+        border-radius: 70px;
+    }
+    .chefs-items{
+        row-gap: 30px;
+    } 
+    .chefs-item{
+        width: 40%;
+    }
+    .chefs-photo::after{
+        bottom: -45px;
+    }
+    .card{
+        width: 40%;
+    }
+    .contact-card{
+        padding: 10px;
+        width: 49.2%;
+        display: flex;
+        background-color: #F5F5F5;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .card-text{
+        padding-left: 15px;
+    }
+    .first{
+        width: 49.3%;
+    }
+    .footer-content{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .sec1{
+        order: -1;
+        width: 50%;
+    }
+    .sec2{
+        order: 1;
+        width: 100%;
+        padding:0;
+    }
+    .sec3{
+        order: 0;
+        width: 50%;
+    }
+}
+@media screen and (min-width:576px) and (max-width:767px) {
+    .home{
+        height: fit-content;
+        
+    }
+    .home-content{
+        flex-direction: column;
+        justify-content: center; 
+        padding: 100px 0;   
+    }
+    .home-photo{
+        width: 80%;
+        order: -1;
+    }
+    .content-text{
+        width: 100%;
+        align-items: center;
+    }
+    
+    .text-title h2{
+        width: 50%;
+        margin: auto;
+    }
+    .book-button button{
+        border-radius: 70px;
+    }
+    .chefs-items{
+        row-gap: 80px;
+    } 
+    .chefs-item{
+        width: 80%;
+    }
+    .chefs-photo::after{
+        bottom: -40px;
+        background-repeat: repeat;
+    }
+    .card{
+        width: 80%;
+    }
+    
+    iframe{
+        width: 95%;
+        margin:0 20px;
+        height: 400px;
+    }
+    .contact-cards{
+        justify-content: center;
+    }
+    .contact-card{
+        padding: 10px;
+        width: 95%;
+        display: flex;
+        background-color: #F5F5F5;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .card-text{
+        padding-left: 15px;
+    }
+    .first{
+        width: 49%;
+    }
+    .main-form{
+        width: 95.5%;
+        margin: auto;
+    }
+    .footer-content{
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 80%;
+        margin: auto;
+    }
+    .sec1{
+        width: 100%;
+    }
+    .sec2{
+        width: 100%;
+        padding:0;
+    }
+    .sec3{
+        
+        width: 100%;
+    }
+}
+@media screen and (max-width:575px) {
+    .home{
+        height: fit-content;
+    }
+    .container{
+        width: 100%;
+    }
+    .main-nav{
+        width: 100%;
+    }
+    .nav-links{
+        flex-direction: column;
+        column-gap: 5px;
+    }
+    .home-content{
+        flex-direction: column;
+        justify-content: center; 
+        padding: 100px 0;   
+    }
+    .home-photo{
+        width: 100%;
+        order: -1;
+    }
+    .content-text{
+        width: 100%;
+        align-items: center;
+    }
+    
+    .text-title h2{
+        width: 90%;
+        margin: auto;
+    }
+    .book-button button{
+        border-radius: 70px;
+    }
+    .chefs-items{
+        row-gap: 80px;
+    } 
+    .chefs-item{
+        width: 90%;
+    }
+    .chefs-photo::after{
+        bottom: -10px;
+        background-repeat: repeat;
+    }
+    .card{
+        width: 95%;
+    }
+    iframe{
+        width: 94%;
+        margin-left:15px ;
+        height: 400px;
+    }
+    .contact-cards{
+        justify-content: center;
+    }
+    .contact-card{
+        padding: 10px;
+        width: 95%;
+        display: flex;
+        background-color: #F5F5F5;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .main-form{
+        width: 94%;
+        margin: auto;
+    }
+    .first{
+        width: 100%;
+    }
+    .footer-content{
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 95%;
+        margin: auto;
+    }
+    .sec1{
+        width: 100%;
+    }
+    .sec2{
+        width: 100%;
+        padding:0;
+    }
+    .sec3{
+        
+        width: 100%;
+    }
+    .sec2-form input{
+        width: 100%;
+        height: 40px;
+        margin-bottom: 10px;
+    }
+    .sec2-form button{
+        width: 100%;
+        padding: 12px 0;
+        background-color: #E61414;
+        border: none;
+    }
+}
